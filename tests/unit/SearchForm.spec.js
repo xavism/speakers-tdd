@@ -66,6 +66,8 @@ describe('SearchForm', () => {
     })
     // assert
     button().trigger('click')
-    expect(actions.FETCH_SPEAKER).toHaveBeenCalledWith('Speaker')
+    expect(actions.FETCH_SPEAKER).toHaveBeenCalled()
+    // Exists a jest method for the expect assert called '.toHaveBeenCalledWith', but an action has more parameter than just the passed in the view
+    expect(actions.FETCH_SPEAKER.mock.calls[0][1]).toEqual("Speaker")
   })
 })
