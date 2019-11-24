@@ -1,3 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SpeakersView it renders the component 1`] = `<div>Hi There</div>`;
+exports[`SpeakersView it renders the component 1`] = `
+<div>
+  <searchform-stub></searchform-stub>
+  <speakerslist-stub></speakerslist-stub>
+</div>
+`;

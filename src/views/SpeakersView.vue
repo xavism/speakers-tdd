@@ -1,9 +1,19 @@
 <template>
-  <div>Hi There</div>
+  <div>
+    <SearchForm/>
+    <SpeakersList/>
+  </div>
 </template>
 
 <script>
+import SearchForm from '@/components/SearchForm'
+import SpeakersList from '@/components/SpeakersList'
+
 export default {
-  name: 'SpeakersView'
+  name: 'SpeakersView',
+  components: {
+    SearchForm,
+    SpeakersList
+  }
 }
 </script>
