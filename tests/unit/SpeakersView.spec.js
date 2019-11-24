@@ -5,6 +5,16 @@ import SpeakersList from '@/components/SpeakersList'
 
 
 describe('SpeakersView', () => {
+  const build = () => {
+    const wrapper = shallowMount(SpeakersView)
+
+    return {
+      wrapper,
+      SearchForm: () => wrapper.find(SearchForm),
+      SpeakersList: () => wrapper.find(SpeakersList)
+    }
+  }
+
   it('it renders the component', () => {
     // arrange
     const wrapper = shallowMount(SpeakersView)
@@ -15,12 +25,10 @@ describe('SpeakersView', () => {
 
   it('it renders the right', () => {
     // arrange
-    const wrapper = shallowMount(SpeakersView)
-    const searchForm = wrapper.find(SearchForm)
-    const speakersList = wrapper.find(SpeakersList)
+    const { SearchForm, SpeakersList } = build()
 
     // assert
-    expect(searchForm.exists()).toBe(true)
-    expect(speakersList.exists()).toBe(true)
+    expect(SearchForm().exists()).toBe(true)
+    expect(SpeakersList().exists()).toBe(true)
   })
 })
