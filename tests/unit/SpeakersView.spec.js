@@ -3,10 +3,16 @@ import SpeakersView from '@/views/SpeakersView'
 import SearchForm from '@/components/SearchForm'
 import SpeakersList from '@/components/SpeakersList'
 
-
+let speaker = {
+  name: 'My Name'
+}
 describe('SpeakersView', () => {
   const build = () => {
-    const wrapper = shallowMount(SpeakersView)
+    const wrapper = shallowMount(SpeakersView, {
+      computed: {
+        speakers: () => [speaker, speaker]
+      }
+    })
 
     return {
       wrapper,
@@ -30,5 +36,13 @@ describe('SpeakersView', () => {
     // assert
     expect(SearchForm().exists()).toBe(true)
     expect(SpeakersList().exists()).toBe(true)
+  })
+
+  it('it passes speakers to the speakersList', () => {
+    // arrange
+    const { wrapper, SpeakersList } = build()
+
+    // assert
+    expect(SpeakersList().vm.speakers).toBe([speaker, speaker])
   })
 })
