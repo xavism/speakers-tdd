@@ -1,13 +1,17 @@
 <template>
   <div>
-    <input type="text">
+    <input type="text" v-model="inputData">
     <button></button>
   </div>
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      inputData: ''
+    }
+  }
 }
 </script>
 

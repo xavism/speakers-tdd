@@ -36,7 +36,6 @@ describe('SearchForm', () => {
       inputData: 'Speaker'
     })
     // assert
-    expect(input().text()).toBe('Speaker')
     expect(input().element.value).toBe('Speaker')
   })
 })
