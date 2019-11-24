@@ -27,4 +27,16 @@ describe('SearchForm', () => {
     expect(input().exists()).toBe(true)
     expect(button().exists()).toBe(true)
   })
+
+  it('binds the input data', () => {
+    // arrange
+    const { wrapper, input } = build()
+    // Set local data to Speaker
+    wrapper.setData({
+      inputData: 'Speaker'
+    })
+    // assert
+    expect(input().text()).toBe('Speaker')
+    expect(input().element.value).toBe('Speaker')
+  })
 })
