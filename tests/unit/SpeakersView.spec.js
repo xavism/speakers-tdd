@@ -41,8 +41,10 @@ describe('SpeakersView', () => {
   it('it passes speakers to the speakersList', () => {
     // arrange
     const { wrapper, SpeakersList } = build()
-
     // assert
-    expect(SpeakersList().vm.speakers).toBe([speaker, speaker])
+    expect(SpeakersList().vm.speakers).toEqual([speaker, speaker])
+    // or
+    expect(SpeakersList().vm.speakers).toBe(store.getters.speakers)
+    // toBe expects === rather than toEqual that expects ==
   })
 })
