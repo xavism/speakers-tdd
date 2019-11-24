@@ -4,9 +4,9 @@ import SearchForm from '@/components/SearchForm'
 import SpeakersList from '@/components/SpeakersList'
 import Vuex from 'vuex'
 
-// NEW: Creating a localVue instance to be able to use vuex
+// Creating a localVue instance to be able to use vuex
 const localVue = createLocalVue()
-// NEW: Adding Vuex to our new local Vue instance
+// Adding Vuex to our new local Vue instance
 localVue.use(Vuex)
 
 let speaker = {
@@ -14,11 +14,11 @@ let speaker = {
 }
 
 describe('SpeakersView', () => {
-  // NEW: creating global variables to access through the tests
+  // Creating global variables to access through the tests
   let store, getters
-  // NEW: executes beforeEach Test
+  // Executes beforeEach Test
   beforeEach(() => {
-    //NEW:  it creates a store with the desired getters
+    // It creates a store with the desired getters
     getters = {
       speakers: () => [speaker, speaker]
     }
@@ -29,7 +29,7 @@ describe('SpeakersView', () => {
   
   const build = () => {
     const wrapper = shallowMount(SpeakersView, {
-      // NEW: Passing the created store and the vue instance when mounting the component
+      // Passing the created store and the vue instance when mounting the component
       store,
       localVue
     })
