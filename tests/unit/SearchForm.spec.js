@@ -1,10 +1,28 @@
-import { shallowMount } from '@vue/test-utils'
+import { shallowMount, createLocalVue } from '@vue/test-utils'
 import SearchForm from '@/components/SearchForm'
+import Vuex from 'vuex'
+
+const localVue = createLocalVue()
+localVue.use(Vuex)
 
 describe('SearchForm', () => {
-  
+  let store, actions
+
+  beforeEach(() => {
+    // It creates a store with the desired getters
+    actions = {
+      FETCH_SPEAKER: jest.fn()
+    }
+    store = new Vuex.Store({
+      actions
+    })
+  })
+
   const build = () => {
-    const wrapper = shallowMount(SearchForm)
+    const wrapper = shallowMount(SearchForm, {
+      store,
+      localVue
+    })
 
     return {
       wrapper,
@@ -37,5 +55,17 @@ describe('SearchForm', () => {
     })
     // assert
     expect(input().element.value).toBe('Speaker')
+  })
+
+  it('dispatches FETCH_SPEAKER when clicking the button with the correct parameters', () => {
+    // arrange
+    const { wrapper, button } = build()
+    // Set local data to Speaker
+    wrapper.setData({
+      inputData: 'Speaker'
+    })
+    // assert
+    button().trigger('click')
+    expect(actions.FETCH_SPEAKER).toHaveBeenCalledWith('Speaker')
   })
 })
