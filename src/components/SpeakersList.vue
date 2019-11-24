@@ -4,7 +4,12 @@
 
 <script>
 export default {
-
+  props: {
+    speakers: {
+      type: Array,
+      required: true
+    }
+  }
 }
 </script>
 
