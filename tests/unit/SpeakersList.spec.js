@@ -5,12 +5,13 @@ import Speaker from '@/components/Speaker'
 describe('SpeakersList', () => {
   let props
   let speaker = {
+    username: '@myname',
     name: 'My Name'
   }
   beforeEach(() => {
     // Creating the props to pass when mounting
     props = {
-      speakers: [speaker, speaker]
+      speakers: [speaker]
     }
   })
 
@@ -37,10 +38,13 @@ describe('SpeakersList', () => {
     // arrange
     const { wrapper, Speakers } = build()
     // assert
-    expect(Speakers().length.toBe(2))
+    expect(Speakers().length).toBe(1)
     wrapper.setProps({
-      speakers = [speaker]
+      speakers: [speaker, {
+        ...speaker,
+        username: '@username'
+      }]
     })
-    expect(Speakers().length.toBe(1))
+    expect(Speakers().length).toBe(2)
   })
 })
