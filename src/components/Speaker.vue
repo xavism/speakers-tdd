@@ -1,5 +1,8 @@
 <template>
-  
+  <div>
+    <img :src="speaker.image">
+    <h2>{{speaker.username}}</h2>
+  </div>
 </template>
 
 <script>
