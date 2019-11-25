@@ -42,7 +42,7 @@ describe('SpeakersView', () => {
     }
   }
 
-  it('it renders the component', () => {
+  it('renders the component', () => {
     // arrange
     const { wrapper } = build()
 
@@ -50,7 +50,7 @@ describe('SpeakersView', () => {
     expect(wrapper.html()).toMatchSnapshot()
   })
 
-  it('it renders the right', () => {
+  it('renders the right', () => {
     // arrange
     const { SearchForm, SpeakersList } = build()
 
@@ -59,7 +59,7 @@ describe('SpeakersView', () => {
     expect(SpeakersList().exists()).toBe(true)
   })
 
-  it('it passes speakers to the speakersList', () => {
+  it('passes speakers to the speakersList', () => {
     // arrange
     const { SpeakersList } = build()
 

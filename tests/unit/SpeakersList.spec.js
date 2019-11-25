@@ -27,14 +27,14 @@ describe('SpeakersList', () => {
     }
   }
 
-  it('it renders the component', () => {
+  it('renders the component', () => {
     // arrange
     const { wrapper } = build()
     // assert
     expect(wrapper.html()).toMatchSnapshot()
   })
 
-  it('it renders the right', () => {
+  it('renders the right', () => {
     // arrange
     const { wrapper, Speakers } = build()
     // assert
@@ -46,5 +46,12 @@ describe('SpeakersList', () => {
       }]
     })
     expect(Speakers().length).toBe(2)
+  })
+
+  it('send speaker data to the childs', () => {
+    // arrange
+    const { Speakers } = build()
+    // assert
+    expect(Speakers().at(0).vm.speaker).toBe(speaker)
   })
 })

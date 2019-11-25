@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SpeakersList it renders the component 1`] = `
+exports[`SpeakersList renders the component 1`] = `
 <div>
   <speaker-stub></speaker-stub>
 </div>

@@ -31,14 +31,14 @@ describe('SearchForm', () => {
     }
   }
 
-  it('it renders the component', () => {
+  it('renders the component', () => {
     // arrange
     const { wrapper } = build()
     // assert
     expect(wrapper.html()).toMatchSnapshot()
   })
 
-  it('it renders the right', () => {
+  it('renders the right', () => {
     // arrange
     const { input, button } = build()
     // assert
