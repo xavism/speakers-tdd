@@ -37,6 +37,6 @@ describe('Speaker', () => {
     const { wrapper } = build()
     // assert
     expect(wrapper.text()).toContain(speaker.username)
-    expect(wrapper.find('a').attributes('href')).toBe(speaker.image)
+    expect(wrapper.find('img').attributes('src')).toBe(speaker.image)
   })
 })
