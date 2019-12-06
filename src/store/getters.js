@@ -1,1 +1,5 @@
-export default {}
+export default {
+  speakers: state => {
+    return state.speakers
+  }
+}
