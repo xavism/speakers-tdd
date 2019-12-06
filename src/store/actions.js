@@ -1,7 +1,7 @@
 import api from '@/api';
 
 export default {
-  FETCH_SPEAKER({ commit }, { username }) {
+  FETCH_SPEAKER({ commit }, username) {
     return new Promise(async (resolve, reject) => {
       try {
         const user = await api.searchSpeaker(username);
