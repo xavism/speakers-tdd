@@ -18,7 +18,7 @@ describe('Store actions', () => {
     const expectedSpeaker = 'xavism';
 
     // act
-    await actions.FETCH_SPEAKER({ commit }, { username: expectedSpeaker });
+    await actions.FETCH_SPEAKER({ commit }, expectedSpeaker);
     await flushPromises();
     // assert
     expect(api.searchSpeaker).toHaveBeenCalledWith(expectedSpeaker);

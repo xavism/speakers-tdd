@@ -15,10 +15,6 @@ export default {
     }
   },
   methods: {
-    // fetchSpeaker(username) {
-    //   console.log(username)
-    //   this.$store.dispatch('FETCH_SPEAKER', {username})
-    // }
     ...mapActions({
       fetchSpeaker: 'FETCH_SPEAKER'
     })
