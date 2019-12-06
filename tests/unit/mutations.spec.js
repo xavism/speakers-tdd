@@ -11,10 +11,14 @@ describe('Mutations', () => {
 
   it('adds a new speaker', () => {
     // arrange
-    const expectedSpeaker = speaker
+    const expectedSpeaker = {
+      username: speaker.login,
+      name: speaker.name,
+      image: speaker.avatar_url
+    }
 
     // act
-    mutations.SET_SPEAKER(state, expectedSpeaker)
+    mutations.SET_SPEAKER(state, speaker)
 
     // assert
     expect(state.speakers.length).toBe(1);
@@ -23,10 +27,14 @@ describe('Mutations', () => {
 
   it('does not allow repetitions', () => {
     // arrange
-    const expectedSpeaker = speaker
+    const expectedSpeaker = {
+      username: speaker.login,
+      name: speaker.name,
+      image: speaker.avatar_url
+    }
     state.speakers = [expectedSpeaker]
     // act
-    mutations.SET_SPEAKER(state, expectedSpeaker)
+    mutations.SET_SPEAKER(state, speaker)
 
     // assert
     expect(state.speakers.length).toBe(1);
