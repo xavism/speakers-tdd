@@ -20,9 +20,8 @@ describe('Store actions', () => {
     // act
     await actions.FETCH_SPEAKER({ commit }, { username: expectedSpeaker });
     await flushPromises();
-
     // assert
-    expect(api.searchUser).toHaveBeenCalledWith(expectedUser);
-    expect(commit).toHaveBeenCalledWith('SET_USER', speakerFixture);
+    expect(api.searchSpeaker).toHaveBeenCalledWith(expectedSpeaker);
+    expect(commit).toHaveBeenCalledWith('SET_SPEAKER', speakerFixture);
   });
 });
