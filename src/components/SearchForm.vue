@@ -1,7 +1,7 @@
   <template>
   <div>
     <input type="text" v-model="inputData">
-    <button @click="fetchSpeaker({username:inputData}) ">Add Speaker</button>
+    <button @click="fetchSpeaker(inputData) ">Add Speaker</button>
   </div>
 </template>
 
