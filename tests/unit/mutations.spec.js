@@ -24,7 +24,7 @@ describe('Mutations', () => {
   it('does not allow repetitions', () => {
     // arrange
     const expectedSpeaker = speaker
-    state = [expectedSpeaker]
+    state.speakers = [expectedSpeaker]
     // act
     mutations.SET_SPEAKER(state, expectedSpeaker)
 
