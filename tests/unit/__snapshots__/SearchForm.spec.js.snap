@@ -1,3 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchForm renders the component 1`] = `<div><input type="text"> <button>Add Speaker</button></div>`;
+exports[`SearchForm renders the component 1`] = `
+<div class="columns">
+  <div class="column">
+    <b-field-stub label="Username" addons="true">
+      <b-input-stub usehtml5validation="true" value="" type="text" hascounter="true" customclass=""></b-input-stub>
+    </b-field-stub>
+  </div>
+  <div class="column">
+    <b-button-stub type="is-primary" outlined="true" nativetype="button" tag="button">
+      Add
+    </b-button-stub>
+  </div>
+</div>
+`;

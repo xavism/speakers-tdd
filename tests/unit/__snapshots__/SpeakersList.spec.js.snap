@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SpeakersList renders the component 1`] = `
-<div>
-  <speaker-stub speaker="[object Object]"></speaker-stub>
+<div class="columns">
+  <div class="column">
+    <speaker-stub speaker="[object Object]"></speaker-stub>
+  </div>
 </div>
 `;
