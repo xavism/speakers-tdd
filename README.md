@@ -1,4 +1,5 @@
-# tdd
+# Test Driven Development with Vue and Jest
+This project contains a basic app done through TDD. The app acceses github's API and stores the users to a list. 
 
 ## Project setup
 ```
@@ -10,20 +11,44 @@ npm install
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Run your unit tests with watchAll flah
 ```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
+npm run test:unit:watch
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Steps
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+The importance of this talk is not the final result but the steps to achieve it. Each branch corresponds to a phase explained in the talk. The resume of the steps can be found bellow 
+
+| branch | part | status | explanation |
+|--------|------|--------|-------------|
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+| step-1 |      |        |             |
+|        |      |        |             |
+|        |      |        |             |
+|        |      |        |             |
+|        |      |        |             |
+|        |      |        |             |
+|        |      |        |             |
