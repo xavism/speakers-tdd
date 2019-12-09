@@ -2,7 +2,7 @@
 
 This project contains a basic app done through TDD. The app acceses github's API and stores the users to a list. 
 
-![Talk Banner](https://secure.meetupstatic.com/photos/event/2/1/8/3/highres_486968579.jpeg | width=300)
+![Talk Banner](https://secure.meetupstatic.com/photos/event/2/1/8/3/highres_486968579.jpeg)
 
 ## Project setup :wrench:
 ```
