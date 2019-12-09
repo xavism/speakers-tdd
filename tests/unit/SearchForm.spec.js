@@ -1,4 +1,4 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils'
+import { mount, createLocalVue } from '@vue/test-utils'
 import SearchForm from '@/components/SearchForm'
 import Vuex from 'vuex'
 import Buefy from 'buefy'
@@ -21,7 +21,7 @@ describe('SearchForm', () => {
   })
 
   const build = () => {
-    const wrapper = shallowMount(SearchForm, {
+    const wrapper = mount(SearchForm, {
       store,
       localVue
     })

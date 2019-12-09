@@ -3,14 +3,19 @@
 exports[`SearchForm renders the component 1`] = `
 <div class="columns">
   <div class="column">
-    <b-field-stub label="Username" addons="true">
-      <b-input-stub usehtml5validation="true" value="" type="text" hascounter="true" customclass=""></b-input-stub>
-    </b-field-stub>
+    <div class="field"><label class="label">Username</label>
+      <div class="control is-clearfix"><input type="text" autocomplete="on" class="input">
+        <!---->
+        <!---->
+        <!---->
+      </div>
+      <!---->
+    </div>
   </div>
-  <div class="column">
-    <b-button-stub type="is-primary" outlined="true" nativetype="button" tag="button">
+  <div class="column"><button type="button" class="button is-primary is-outlined">
+      <!----> <span>
       Add
-    </b-button-stub>
-  </div>
+    </span>
+      <!----></button></div>
 </div>
 `;
