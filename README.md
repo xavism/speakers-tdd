@@ -19,7 +19,7 @@ npm run serve
 npm run test:unit:watch
 ```
 
-### Steps :turtle:
+## Steps :turtle:
 
 The importance of this talk is not the final result but the steps to achieve it. Each branch corresponds to a phase explained in the talk. The resume of the steps can be found bellow 
 
@@ -56,6 +56,9 @@ The importance of this talk is not the final result but the steps to achieve it.
 | step-29          |      |        |             |
 | step-30          |      |        |             |
 | master           |      |        |             |
+
+## Final Result :shipit:
+
 
 ![Final Result](https://s3.amazonaws.com/media-p.slid.es/uploads/1006336/images/6872591/pasted-from-clipboard.png)
 
