@@ -23,7 +23,7 @@ npm run test:unit:watch
 
 The importance of this talk is not the final result but the steps to achieve it. Each branch corresponds to a phase explained in the talk. The resume of the steps can be found bellow 
 
-| branch | part | status | explanation |
+| branch :octocat: | part | status | explanation |
 |--------|------|--------|-------------|
 | step-1 |      |        |             |
 | step-1 |      |        |             |
