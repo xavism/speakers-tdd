@@ -1,7 +1,19 @@
-  <template>
-  <div>
-    <input type="text" v-model="inputData">
-    <button @click="fetchSpeaker(inputData) ">Add Speaker</button>
+<template>
+  <div class="columns">
+    <div class="column">
+      <b-field label="Username">
+        <b-input v-model="inputData"></b-input>
+      </b-field>
+    </div>
+    <div class="column">
+      <b-button 
+        type="is-primary"
+        @click="fetchSpeaker(inputData)"
+        outlined
+        icon-left="github-circle">
+        Add
+      </b-button>
+    </div>
   </div>
 </template>
 
@@ -22,6 +34,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+  .columns {
+    align-items: flex-end;
+  }
 </style>
