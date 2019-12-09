@@ -9,8 +9,7 @@
       <b-button 
         type="is-primary"
         @click="fetchSpeaker(inputData)"
-        outlined
-        icon-left="github-circle">
+        outlined>
         Add
       </b-button>
     </div>
