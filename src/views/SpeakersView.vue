@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <SearchForm/>
     <SpeakersList :speakers="speakers"/>
   </div>
@@ -21,3 +21,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.container {
+  padding: 20px;
+}
+</style>
