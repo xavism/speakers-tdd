@@ -32,14 +32,14 @@ The importance of this talk is not the final result but the steps to achieve it.
 | step-5           | SpeakersView  | :white_check_mark:       | Refactor                                                                                 |
 | step-6           | SpeakersView  | :red_circle:         | Test to pass the speakers as props to the child components                               |
 | step-7           | SpeakersView  | :white_check_mark:       | Pass speakers as props                                                                   |
-| step-8           | SearchForm    | :red_circle: & :white_check_mark: | Tests and implementation to ensure that the component renders the right                  |
+| step-8           | SearchForm    | :red_circle::white_check_mark: | Tests and implementation to ensure that the component renders the right                  |
 | step-8           | SearchForm    | :red_circle:         | Test for binding input                                                                   |
 | step-10          | SearchForm    | :white_check_mark:       | Binding implementation                                                                   |
 | step-11          | SearchForm    | :red_circle:         | Testing the clicking action                                                              |
 | step-12          | SearchForm    | :white_check_mark:       | Implementing the click event                                                             |
 | step-13          | SpeakersList  | :red_circle:         | Test to render the right                                                                 |
 | step-14          | SpeakersList  | :white_check_mark:       | Rendering the right thing                                                                |
-| step-15          | SpeakersList  | :red_circle: & :white_check_mark: | Test and implementation of the information forwarding to child                           |
+| step-15          | SpeakersList  | :red_circle::white_check_mark: | Test and implementation of the information forwarding to child                           |
 | step-16          | Speaker       | :red_circle:         | Test to render the right                                                                 |
 | step-17          | Speaker       | :white_check_mark:       | Rendering the right thing                                                                |
 | step-18          | App           | :red_circle:         | Test that App.vue contains the SpeakersView                                              |
