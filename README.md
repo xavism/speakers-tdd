@@ -62,3 +62,6 @@ The importance of this talk is not the final result but the steps to achieve it.
 
 ![Final Result](https://s3.amazonaws.com/media-p.slid.es/uploads/1006336/images/6872591/pasted-from-clipboard.png)
 
+## Slides :eyes:
+
+The slides are available [here](https://slides.com/xavisanchezmir/tdd#/)
