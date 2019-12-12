@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1576161715319" clover="3.2.0">
-  <project timestamp="1576161715320" name="All files">
+<coverage generated="1576162718523" clover="3.2.0">
+  <project timestamp="1576162718524" name="All files">
     <metrics statements="24" coveredstatements="18" conditionals="2" coveredconditionals="2" methods="9" coveredmethods="8" elements="35" coveredelements="28" complexity="0" loc="24" ncloc="24" packages="4" files="11" classes="11"/>
     <package name="src">
       <metrics statements="8" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="2"/>
@@ -10,7 +10,7 @@
       </file>
       <file name="api.js" path="/Users/xaviersanchezmir/Projects/Talks/tdd/src/api.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="4" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
       </file>
