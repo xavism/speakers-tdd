@@ -24,4 +24,17 @@ describe('Store actions', () => {
     expect(api.searchSpeaker).toHaveBeenCalledWith(expectedSpeaker);
     expect(commit).toHaveBeenCalledWith('SET_SPEAKER', speakerFixture);
   });
-});
+
+  it('fetches speaker with error', async () => {
+    // arrange
+    const expectedSpeaker = 'xavism';
+    try {
+      // act
+      await actions.FETCH_SPEAKER({ commit }, expectedSpeaker)
+      await flushPromises()
+    } catch (e) {
+      // assert
+      expect(e).toMatch('Error')
+    }
+  })
+})
