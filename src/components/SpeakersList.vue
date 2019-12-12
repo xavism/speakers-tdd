@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Speaker v-for="speaker in speakers" :key="speaker.username"/>
+    <Speaker v-for="speaker in speakers" :key="speaker.username" :speaker="speaker"/>
   </div>
 </template>
 
