@@ -3,6 +3,8 @@
 This project contains a basic app done through TDD. The app acceses github's API and stores the users to a list. 
 
 [![Build Status](https://travis-ci.com/xavism/speakers-tdd.svg?branch=master)](https://travis-ci.com/xavism/speakers-tdd.svg?branch=master)
+[![Code Coverage](https://codecov.io/gh/xavism/speakers-tdd/branch/master/graph/badge.svg)](https://codecov.io/gh/xavism/speakers-tdd/branch/master/graph/badge.svg)
+
 
 
 ![Talk Banner](https://secure.meetupstatic.com/photos/event/2/1/8/3/highres_486968579.jpeg)
