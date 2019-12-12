@@ -19,3 +19,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Coverage directory used by tools like istanbul
+coverage
