@@ -6,6 +6,8 @@ module.exports = {
   ],
   modulePathIgnorePatterns: [
     '<rootDir>/dist/',
+    'store/index.js',
+    'src/main.js',
     'node_modules',
   ]
 };
